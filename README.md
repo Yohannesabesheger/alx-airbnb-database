@@ -64,5 +64,5 @@ This repository contains the **complete database implementation** for the ALX Ai
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/alx-airbnb-database.git
+   git clone https://github.com/Yohannesabesheger/alx-airbnb-database.git
    cd alx-airbnb-database
