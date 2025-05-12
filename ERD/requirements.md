@@ -28,6 +28,14 @@ This repository contains the **complete database implementation** for the ALX Ai
 - ✅ Review and rating system
 - ✅ Messaging between users
 
+  
+### Database Normalization Achievements
+- 🧩 **1NF Compliance**: All tables have atomic values and proper primary keys
+- 🔗 **2NF Compliance**: No partial dependencies in any table
+- 🏆 **3NF Compliance**: Zero transitive dependencies through careful schema design
+- 📅 **Temporal Data Support**: Historical pricing tracking without redundancy
+
+
 ### Database Features
 - 🏷️ **3rd Normal Form compliance**
 - 🔗 **Relationship integrity** with proper foreign keys
@@ -39,7 +47,7 @@ This repository contains the **complete database implementation** for the ALX Ai
 ## 🗃️ Database Schema
 
 ### Entity Relationship Diagram
-![ER Diagram](docs/er_diagram.png) *(Placeholder - add actual diagram path)*
+![ER Diagram][(docs/er_diagram.png)](https://github.com/Yohannesabesheger/alx-airbnb-database/blob/main/ERD/Diagram.png) 
 
 ### Tables Structure
 
@@ -54,13 +62,7 @@ This repository contains the **complete database implementation** for the ALX Ai
 | `Review`       | Property ratings and feedback        | 1-5 star rating system               |
 | `Message`      | User-to-user communication           | Timestamped conversations            |
 
-## 💻 Installation
 
-### Prerequisites
-- MySQL 8.0+
-- MySQL client tools
-
-### Setup Instructions
 
 1. Clone the repository:
    ```bash
