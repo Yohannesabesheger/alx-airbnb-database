@@ -35,9 +35,9 @@ SELECT
     u.last_name
 FROM 
     Property p
+GROUP BY p.property_id, p.name, p.location,
+
 LEFT JOIN Review r ON p.property_id = r.property_id
-GROUP BY 
-    p.property_id, p.name, p.location,
     
 
 
