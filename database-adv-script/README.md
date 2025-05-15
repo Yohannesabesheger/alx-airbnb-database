@@ -47,3 +47,27 @@ WHERE (
     WHERE 
         b.user_id = u.user_id
 ) > 3;
+
+## 📊 Aggregation & Window Functions
+
+This section provides examples of using SQL **aggregation** and **window functions** to analyze booking data in the system.
+
+---
+
+### ✅ 1. Total Number of Bookings by Each User  
+**(Aggregation with `COUNT` and `GROUP BY`)**
+
+This query counts the total number of bookings each user has made.
+
+```sql
+SELECT 
+    u.user_id,
+    u.first_name,
+    u.last_name,
+    COUNT(b.booking_id) AS total_bookings
+FROM 
+    User u
+LEFT JOIN 
+    Booking b ON u.user_id = b.user_id
+GROUP BY 
+    u.user_id, u.first_name, u.last_name;
