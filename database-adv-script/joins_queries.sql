@@ -40,5 +40,18 @@ LEFT JOIN User u ON r.user_id = u.user_id
 ORDER BY 
     p.name ASC, r.created_at DESC;
     
+-- Outer Join
+SELECT 
+    u.user_id,
+    u.first_name,
+    u.last_name,
+    b.booking_id,
+    b.property_id,
+    b.start_date,
+    b.end_date,
+    b.status
+FROM 
+    User u
+FULL OUTER JOIN Booking b ON u.user_id = b.user_id;
 
 
