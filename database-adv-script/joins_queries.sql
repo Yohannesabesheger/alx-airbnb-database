@@ -1,5 +1,5 @@
 -- Write a query using an INNER JOIN to retrieve all bookings and the respective users who made those bookings.
-Inner Join
+-- Inner Join
 SELECT 
     b.booking_id,
     b.property_id,
