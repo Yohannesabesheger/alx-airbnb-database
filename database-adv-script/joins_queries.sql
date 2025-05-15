@@ -19,3 +19,27 @@ FROM
 INNER JOIN 
     User u ON b.user_id = u.user_id;
 
+-- Left Joun
+--Write a query using aLEFT JOIN to retrieve all properties and their reviews, including properties that have no reviews.
+
+SELECT 
+    p.property_id,
+    p.name AS property_name,
+    p.location,
+    r.review_id,
+    r.rating,
+    r.comment,
+    r.created_at,
+    u.user_id,
+    u.first_name,
+    u.last_name
+FROM 
+    Property p
+LEFT JOIN Review r ON p.property_id = r.property_id
+LEFT JOIN User u ON r.user_id = u.user_id
+GROUP BY 
+    p.property_id, p.name, p.location,
+    r.review_id, r.rating, r.comment, r.created_at,
+    u.user_id, u.first_name, u.last_name;
+
+
