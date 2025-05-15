@@ -36,10 +36,8 @@ SELECT
 FROM 
     Property p
 LEFT JOIN Review r ON p.property_id = r.property_id
-LEFT JOIN User u ON r.user_id = u.user_id
 GROUP BY 
     p.property_id, p.name, p.location,
-    r.review_id, r.rating, r.comment, r.created_at,
-    u.user_id, u.first_name, u.last_name;
+    
 
 
