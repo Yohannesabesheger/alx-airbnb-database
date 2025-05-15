@@ -28,6 +28,8 @@ WHERE
             AVG(r.rating) > 4.0
     );
     
+## Write a correlated subquery to find users who have made more than 3 bookings.
+
 
     sql
 SELECT 
